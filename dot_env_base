@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+export DEBUG=1
+export SECRET_KEY='<keep-any-unique-identifier'
+# export DJANGO_ALLOWED_HOSTS=* localhost 127.0.0.1 [::1]
+
+export DB_NAME='<name>'
+export DB_USER='<postgres>'
+export DB_PASSWORD='<password>'
+export DB_HOST='<link>'
+export DB_PORT='5432'
