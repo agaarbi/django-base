@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # third party packages
+    'rest_framework',
+
+    # local apps (project apps)
     'accounts',
 ]
 
@@ -114,6 +119,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# simplejwt authentication in rest framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+     ],
+}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
@@ -137,4 +149,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'core.MyUser'
+AUTH_USER_MODEL = 'accounts.MyUser'
