@@ -5,3 +5,4 @@ This repo can be used as base for different django and drf projects. Branch name
 2. base-02: accounts app with django recommended custom user pass, no migrations run so far
 3. base-03: django custom model full example (from django official website)
 4. base-04: django custom model registration using DRF, JWT based authentation. date of birth removed as a field django custom model. authentication for user and admin check endpoint. migrations are made and tested.
+5. Same as base-04, just updated django to 4.2 LTS and requirements.txt
